@@ -1,6 +1,7 @@
-# response = RestClient.get('https://www.dnd5eapi.co/api/spells/aid')
+response = RestClient.get('https://api.open5e.com/spells/')
 
-# spells_hash = JSON.parse(response)
+spells_data = JSON.parse(response.body)
+spells = spells_data["results"]
 
 
-# binding.pry
+binding.pry
