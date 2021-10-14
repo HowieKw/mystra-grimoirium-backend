@@ -14,7 +14,7 @@ response = RestClient.get('https://api.open5e.com/spells/')
 spells_data = JSON.parse(response.body)
 spells = spells_data["results"]
 
-all_spell = spells.each do |spell|
+spells.each do |spell|
     Spell.create(
         name: spell["name"],
         level: spell["level"],
@@ -36,5 +36,8 @@ end
 librarian = User.create(username: "MasterLibrarian", password_digest: "mystra")
 
 # -------- GRIMOIRES -------
-
 wizard = Grimoire.create(user_id: librarian.id, title: "Wizard Grimoire", edit: true, image: "https://res.cloudinary.com/djzhu5kfj/image/upload/v1634246544/Flatiron%20-%20Final%20Project/Wizard_Grimoire_xkwy3u.jpg")
+
+
+# ------- GRIMOIRESPELL ------
+# GrimoireSpell.create(grimoire_id: wizard.id, spell_id: )
