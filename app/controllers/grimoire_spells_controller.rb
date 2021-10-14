@@ -1,0 +1,2 @@
+class GrimoireSpellsController < ApplicationController
+end

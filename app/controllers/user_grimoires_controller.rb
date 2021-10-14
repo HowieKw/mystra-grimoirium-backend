@@ -1,0 +1,2 @@
+class UserGrimoiresController < ApplicationController
+end
