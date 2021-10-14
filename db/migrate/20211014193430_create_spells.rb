@@ -3,6 +3,7 @@ class CreateSpells < ActiveRecord::Migration[6.1]
     create_table :spells do |t|
       t.string :name
       t.string :level
+      t.string :higher_level
       t.string :school
       t.string :components
       t.string :material
@@ -10,10 +11,10 @@ class CreateSpells < ActiveRecord::Migration[6.1]
       t.string :casting_time
       t.string :concentration
       t.string :duration
-      t.string :range_area
-      t.string :attack_save
+      t.string :range
       t.string :class
       t.string :description
+      t.string :ani
 
       t.timestamps
     end
