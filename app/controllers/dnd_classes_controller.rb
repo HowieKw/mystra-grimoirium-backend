@@ -1,0 +1,2 @@
+class DndClassesController < ApplicationController
+end

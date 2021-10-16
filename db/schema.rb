@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_14_202832) do
+ActiveRecord::Schema.define(version: 2021_10_14_233036) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "class_spells", force: :cascade do |t|
+    t.bigint "spell_id", null: false
+    t.bigint "dnd_class_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["dnd_class_id"], name: "index_class_spells_on_dnd_class_id"
+    t.index ["spell_id"], name: "index_class_spells_on_spell_id"
+  end
+
+  create_table "dnd_classes", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "grimoire_spells", force: :cascade do |t|
     t.bigint "grimoire_id", null: false
@@ -37,18 +52,32 @@ ActiveRecord::Schema.define(version: 2021_10_14_202832) do
   create_table "spells", force: :cascade do |t|
     t.string "name"
     t.string "level"
-    t.string "higher_level"
     t.string "school"
     t.string "components"
-    t.string "material"
     t.string "ritual"
     t.string "casting_time"
     t.string "concentration"
     t.string "duration"
-    t.string "range"
-    t.string "class"
+    t.string "range_area"
+    t.string "attack_save"
+    t.string "damage_effect"
     t.string "description"
     t.string "ani"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "spelltags", force: :cascade do |t|
+    t.bigint "spell_id", null: false
+    t.bigint "tag_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["spell_id"], name: "index_spelltags_on_spell_id"
+    t.index ["tag_id"], name: "index_spelltags_on_tag_id"
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -69,9 +98,13 @@ ActiveRecord::Schema.define(version: 2021_10_14_202832) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "class_spells", "dnd_classes"
+  add_foreign_key "class_spells", "spells"
   add_foreign_key "grimoire_spells", "grimoires"
   add_foreign_key "grimoire_spells", "spells"
   add_foreign_key "grimoires", "users"
+  add_foreign_key "spelltags", "spells"
+  add_foreign_key "spelltags", "tags"
   add_foreign_key "user_grimoires", "grimoires"
   add_foreign_key "user_grimoires", "users"
 end
