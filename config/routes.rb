@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :grimoires
   resources :users
 
+  get "/created_grimoires", to: "grimoires#created_grims"
   get "/me", to: "users#show"
   post "/signup", to: "users#create"
   post "/login", to: "sessions#create"
