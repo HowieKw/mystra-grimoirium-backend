@@ -13,6 +13,12 @@ class GrimoireSpellsController < ApplicationController
         end
     end
 
+    def destroy
+        grim_spells = GrimoireSpell.find(params[:id])
+        grim_spells.destroy
+        render json: grim_spells, status: :ok
+    end
+
     private
 
     def grim_spell_params

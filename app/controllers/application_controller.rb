@@ -9,6 +9,6 @@ class ApplicationController < ActionController::API
     end
 
     def confirm_authentication
-        return render json: { error: "You must be logged in to do that." }, status: :unauthorized unless current_user
+        return render json: { error: "You must be logged in to do that."f }, status: :unauthorized unless current_user
     end
 end

@@ -1,7 +1,7 @@
 class GrimoiresController < ApplicationController
 
     def index
-        render json: Grimoire.all
+        render json: Grimoire.all, include: ['added_spells.dnd_classes', 'added_spells.tags', 'added_spells.grimoire_spells']
     end
 
     def created_grims

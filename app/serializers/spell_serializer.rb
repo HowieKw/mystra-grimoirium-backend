@@ -3,4 +3,5 @@ class SpellSerializer < ActiveModel::Serializer
 
   has_many :dnd_classes
   has_many :tags
+  has_many :grimoire_spells
 end
