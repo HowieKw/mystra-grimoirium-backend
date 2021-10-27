@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-  resources :spelltags
-  resources :class_spells
   resources :grimoire_spells
-  resources :tags
-  resources :dnd_classes
   resources :spells
   resources :user_grimoires
   resources :grimoires

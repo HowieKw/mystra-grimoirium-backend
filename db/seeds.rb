@@ -110,7 +110,7 @@ druidcraft = Spell.create(name: "Druidcraft", level: "Cantrip", school: "Transmu
 
 eldritch_blast = Spell.create(name: "Eldritch Blast", level: "Cantrip", school: "Evocation", components: "V,S", ritual: "No", casting_time: "1 Action", concentration: "Not Required", duration: "Instantaneous", range_area: "120 ft.", attack_save: "Ranged", damage_effect: "Force", description: "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.
 
-The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.", ani: "")
+The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.", ani: "https://res.cloudinary.com/djzhu5kfj/video/upload/v1635358157/Flatiron%20-%20Final%20Project/Eldritch_blast_v6wojy.mp4")
 
 guidance = Spell.create(name: "Guidance", level: "Cantrip", school: "Divination", components: "V,S", ritual: "No", casting_time: "1 Action", concentration: "Required", duration: "1 Minute", range_area: "Touch", attack_save: "None", damage_effect: "Buff", description: "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.", ani: "")
 

@@ -1,7 +1,7 @@
 class SpellsController < ApplicationController
     
     def index
-        render json: Spell.all
+        render json: Spell.all, include: ['grimoire_spells.grimoire', 'tags']
     end
 
     def show
