@@ -75,7 +75,7 @@ chill_touch = Spell.create(name: "Chill Touch", level: "Cantrip", school: "Necro
 
 If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.
 
-This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).", ani: "")
+This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).", ani: "https://res.cloudinary.com/djzhu5kfj/video/upload/v1635367343/Flatiron%20-%20Final%20Project/Chill_touch_sjpqmv.mp4")
 
 control_flames = Spell.create(name: "Control Flames", level: "Cantrip", school: "Transmutation", components: "S", ritual: "No", casting_time: "1 Action", concentration: "Not Required", duration: "Instantaneous", range_area: "60 ft. (5 ft. cube)", attack_save: "None", damage_effect: "Control", description: "You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:
 
@@ -87,7 +87,7 @@ control_flames = Spell.create(name: "Control Flames", level: "Cantrip", school: 
 
 * You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour.
 
-If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.", ani: "")
+If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.", ani: "https://res.cloudinary.com/djzhu5kfj/video/upload/v1635369998/Flatiron%20-%20Final%20Project/Control_fire_fstjn4.mp4")
 
 create_bonfire = Spell.create(name: "Create Bonfire", level: "Cantrip", school: "Conjuration", components: "V,S", ritual: "No", casting_time: "1 Action", concentration: "Required", duration: "1 Minute", range_area: "60 ft. (5 ft. cube)", attack_save: "DEX Save", damage_effect: "Fire", description: "You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire’s space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire’s space for the first time on a turn or ends its turn there.
 
@@ -99,7 +99,7 @@ dancing_lights = Spell.create(name: "Dancing Lights", level: "Cantrip", school: 
 
 As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.
 
-* - (a bit of phosphorus or wychwood, or a glowworm)", ani: "")
+* - (a bit of phosphorus or wychwood, or a glowworm)", ani: "https://res.cloudinary.com/djzhu5kfj/video/upload/v1635372317/Flatiron%20-%20Final%20Project/Dancing_lights_jhutdo.mp4")
 
 druidcraft = Spell.create(name: "Druidcraft", level: "Cantrip", school: "Transmutation", components: "V,S", ritual: "No", casting_time: "1 Action", concentration: "Not Required", duration: "Instantaneous", range_area: "30 ft.", attack_save: "None", damage_effect: "Control", description: "Whispering to the spirits of nature, you create one of the following effects within range:
 
@@ -110,7 +110,7 @@ druidcraft = Spell.create(name: "Druidcraft", level: "Cantrip", school: "Transmu
 
 eldritch_blast = Spell.create(name: "Eldritch Blast", level: "Cantrip", school: "Evocation", components: "V,S", ritual: "No", casting_time: "1 Action", concentration: "Not Required", duration: "Instantaneous", range_area: "120 ft.", attack_save: "Ranged", damage_effect: "Force", description: "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage.
 
-The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.", ani: "https://res.cloudinary.com/djzhu5kfj/video/upload/v1635358157/Flatiron%20-%20Final%20Project/Eldritch_blast_v6wojy.mp4")
+The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.", ani: "https://res.cloudinary.com/djzhu5kfj/video/upload/c_crop,h_1045,w_1080/v1635358157/Flatiron%20-%20Final%20Project/Eldritch_blast_v6wojy.mp4")
 
 guidance = Spell.create(name: "Guidance", level: "Cantrip", school: "Divination", components: "V,S", ritual: "No", casting_time: "1 Action", concentration: "Required", duration: "1 Minute", range_area: "Touch", attack_save: "None", damage_effect: "Buff", description: "You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.", ani: "")
 
@@ -131,9 +131,9 @@ feather_fall = Spell.create(name: "Feather Fall", level: "1st", school: "Transmu
 
 witch_bolt = Spell.create(name: "Witch Bolt", level: "1st", school: "Evocation", components: "V,S,M*", ritual: "No", casting_time: "1 Action", concentration: "Required", duration: "1 Minute", range_area: "30 ft.", attack_save: "Ranged", damage_effect: "Lightning", description: "A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell’s range or if it has total cover from you.
 
-    At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st.
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st.
     
-    * - (a twig from a tree that has been struck by lightning)", ani: "")
+* - (a twig from a tree that has been struck by lightning)", ani: "https://res.cloudinary.com/djzhu5kfj/video/upload/v1635371569/Flatiron%20-%20Final%20Project/Witch_bolt_r6x8jv.mp4")
 
 # acid_splash = Spell.create(name: "", level: "", school: "", components: "", ritual: "", casting_time: "", concentration: "", duration: "", range_area: "", attack_save: "", damage_effect: "", description: "", ani: "")
 

@@ -1,7 +1,7 @@
 class UserGrimoiresController < ApplicationController
 
     def index
-        render json: current_user.user_grimoires.all, include: ['grimoire.user_grimoires']
+        render json: current_user.user_grimoires.all, include: ['grimoire.user_grimoires', 'user']
     end
 
     def create
